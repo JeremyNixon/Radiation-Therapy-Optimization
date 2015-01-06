@@ -1,0 +1,29 @@
+# Task 1, Part 1 Run File
+# Applied Mathematics 121
+# David Freed, Chris Bruno, Jeremy Nixon, Millie Shi
+# October 6, 2014
+
+# Clear data history
+reset;
+
+# Test on small data set
+model bin1.mod;
+data CT_small.dat;
+option solver './cplex';
+solve;
+display X;
+
+# Export X as a .txt file for MATLAB code
+display X > beam1_int_small.txt;
+
+# Clear data history
+reset;
+
+# Use on actual data set
+model bin1.mod;
+data CT_actual.dat;
+option solver './cplex';
+solve;
+display X;
+
+# There is no need to export X because this is infeasible. X is an array of 0s

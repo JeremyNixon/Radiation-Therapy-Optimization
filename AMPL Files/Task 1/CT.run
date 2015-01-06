@@ -1,0 +1,21 @@
+# Task 1, Part 1 Run File
+# Applied Mathematics 121
+# David Freed, Chris Bruno, Jeremy Nixon, Millie Shi
+# October 6, 2014
+
+# Test on small data set
+model CT.mod;
+data CT_small.dat;
+option solver './minos';
+solve;
+display X[i];
+
+# Clear data history
+reset;
+
+# Use on actual data set
+model CT.mod;
+data CT_actual.dat;
+option solver './minos';
+solve;
+display X[i];

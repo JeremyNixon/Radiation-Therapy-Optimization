@@ -1,0 +1,58 @@
+# Task 1, Part 5 Run File
+# Applied Mathematics 121
+# David Freed, Chris Bruno, Jeremy Nixon, Millie Shi
+# October 6, 2014
+
+# Clear data history
+reset;
+
+# Test rad enhancement on small data set
+model t5_rad.mod;
+data CT_small.dat;
+option solver './cplex';
+solve;
+display X;
+
+# Export X as a .txt file for the MATLAB code:
+display X > beam5_rad_int_small.txt;
+
+
+# Clear data history
+reset;
+
+# Test rad enhancement on actual data set
+model t5_rad.mod;
+data CT_actual.dat;
+option solver './cplex';
+solve;
+display X;
+
+# Export X as a .txt file for the MATLAB code:
+display X > beam5_rad_int_actual.txt;
+
+# Clear data history
+reset;
+
+# Test pos enhancement on small data set
+model t5_pos.mod;
+data CT_small.dat;
+option solver './cplex';
+solve;
+display X;
+
+# Export X as a .txt file for the MATLAB code:
+display X > beam5_pos_int_small.txt;
+
+# Clear data history
+reset;
+
+# Test pos enhancement on actual data set
+model t5_pos.mod;
+data CT_actual.dat;
+option solver './cplex';
+solve;
+display X;
+
+
+# Export X as a .txt file for the MATLAB code:
+display X > beam5_pos_int_actual.txt;

@@ -1,0 +1,29 @@
+# Task 1, Part 2 Run File
+# Applied Mathematics 121
+# David Freed, Chris Bruno, Jeremy Nixon, Millie Shi
+# October 6, 2014
+
+# Clear data history
+reset;
+
+# Test on small data set
+model bin2.mod;
+data CT_small.dat;
+option solver './cplex';
+solve;
+display X;
+
+# No need to export X because it is the same as beam1_int_small.txt
+
+# Clear data history
+reset;
+
+# Use on actual data set
+model bin2.mod;
+data CT_actual.dat;
+option solver './cplex';
+solve;
+display X;
+
+# Export X as a .txt file for the MATLAB code:
+display X > beam2_int_actual.txt;

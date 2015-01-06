@@ -1,0 +1,58 @@
+# Extreme Optimization README file
+# Applied Mathematics 121
+# Chris Bruno, David Freed, Jeremy Nixon, Millie Shi
+# October 7, 2014
+# Team Name: Optimization is Only The Beginning
+
+Task 1
+
+CT_small.dat
+CT_actual.dat
+bin1.mod
+bin1.run
+total_beams1_small.txt
+visualization1_small
+
+
+Task 2
+
+CT_small.dat
+CT_actual.dat
+bin2.mod
+bin2.run
+total_Beams2_actual.txt
+visualization2_actual
+
+
+Task 3
+
+CT3_small.dat
+CT3_actual.dat
+total_beams3_small.txt       // input files used to generate visualizations
+total_beams3_actual.txt
+bin3.mod
+bin3.run
+visualization3_small
+visualization3_actual
+
+
+Task 5
+
+CT_small.dat
+CT_actual.dat
+t5_pos.mod
+t5_rad.mod
+t5.run
+total_beams5pos_small.txt    // input files used to generate visualizations
+total_beams5pos_actual.txt
+total_beams5rad_small.txt
+total_beams5rad_actual.txt
+visualization5_pos_small     
+visualization5_pos_actual
+visualization5_rad_small
+visualization5_rad_actual
+
+bin5_rad.mod?
+
+
+
